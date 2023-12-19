@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+3  # the License.  You may obtain a copy of the License at
+4  #
+5  #     http://www.apache.org/licenses/LICENSE-2.0
+6  #
+7  # Unless required by applicable law or agreed to in writing, software
+8  # distributed under the License is distributed on an "AS IS" BASIS,
+9  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+10  # See the License for the specific language governing permissions and
+11  # limitations under the License.
+12  # -----------------------------------------------------------------------------
+13  # Stop script for the CATALINA Server
+14  # -----------------------------------------------------------------------------
+15  # Better OS/400 detection: see Bugzilla 31132
+16  os400=false
+17  case "`uname`" in OS400*) os400=true;; esac
+18  # resolve links - $0 may be a softlink
+19  PRG="$0"
+20  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+21  PRGDIR=`dirname "$PRG"`
+22  EXECUTABLE=catalina.sh
+23  # Check that target executable exists
+24  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+25  exec "$PRGDIR"/"$EXECUTABLE" stop "$@"
+26  SET JAVA_HOME=D:\Java\jdk1.8.0_92
+27  SET TOMCAT_HOME=D:\Tomcat\apache-tomcat-8.0.53
+28  #!/bin/sh
+29  # Licensed to the Apache Software Foundation (ASF) under one or more
+30  # contributor license agreements.  See the NOTICE file distributed with
+31  # this work for additional information regarding copyright ownership.
+32  # The ASF licenses this file to You under the Apache License, Version 2.0
+33  # (the "License"); you may not use this file except in compliance with
+34  # the License.  You may obtain a copy of the License at
+35  #
+36  #     http://www.apache.org/licenses/LICENSE-2.0
+37  #
+38  # Unless required by applicable law or agreed to in writing, software
+39  # distributed under the License is distributed on an "AS IS" BASIS,
+40  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+41  # See the License for the specific language governing permissions and
+42  # limitations under the License.
+43  # -----------------------------------------------------------------------------
+44  # Start Script for the CATALINA Server
+45  # -----------------------------------------------------------------------------
+46  # Better OS/400 detection: see Bugzilla 31132
+47  os400=false
+48  case "`uname`" in OS400*) os400=true;; esac
+49  # resolve links - $0 may be a softlink
+50  PRG="$0"
+51  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+52  PRGDIR=`dirname "$PRG"`
+53  EXECUTABLE=catalina.sh
+54  # Check that target executable exists
+55  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+56  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+57  SET JAVA_HOME=D:\Java\jdk1.8.0_92
+58  SET TOMCAT_HOME=D:\Tomcat\apache-tomcat-8.0.53
+59  #!/bin/sh
+60  # Licensed to the Apache Software Foundation (ASF) under one or more
+61  # contributor license agreements.  See the NOTICE file distributed with
+62  # this work for additional information regarding copyright ownership.
+63  # The ASF licenses this file to You under the Apache License, Version 2.0
+64  # (the "License"); you may not use this file except in compliance with
+65  # the License.  You may obtain a copy of the License at
+66  #
+67  #     http://www.apache.org/licenses/LICENSE-2.0
+68  #
+69  # Unless required by applicable law or agreed to in writing, software
+70  # distributed under the License is distributed on an "AS IS" BASIS,
+71  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+72  # See the License for the specific language governing permissions and
+73  # limitations under the License.
+74  # -----------------------------------------------------------------------------
+75  # Start Script for the CATALINA Server
+76  # -----------------------------------------------------------------------------
+77  # Better OS/400 detection: see Bugzilla 31132
+78  os400=false
+79  case "`uname`" in OS400*) os400=true;; esac
+80  # resolve links - $0 may be a softlink
+81  PRG="$0"
+82  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+83  PRGDIR=`dirname "$PRG"`
+84  EXECUTABLE=catalina.sh
+85  # Check that target executable exists
+86  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+87  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+88  SET JAVA_HOME=D:\Java\jdk1.8.0_92
+89  SET TOMCAT_HOME=D:\Tomcat\apache-tomcat-8.0.53
+90  #!/bin/sh
+91  # Licensed to the Apache Software Foundation (ASF) under one or more
+92  # contributor license agreements.  See the NOTICE file distributed with
+93  # this work for additional information regarding copyright ownership.
+94  # The ASF licenses this file to You under the Apache License, Version 2.0
+95  # (the "License"); you may not use this file except in compliance with
+96  # the License.  You may obtain a copy of the License at
+97  #
+98  #     http://www.apache.org/licenses/LICENSE-2.0
+99  #
+100  # Unless required by applicable law or agreed to in writing, software
+101  # distributed under the License is distributed on an "AS IS" BASIS,
+102  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+103  # See the License for the specific language governing permissions and
+104  # limitations under the License.
+105  # -----------------------------------------------------------------------------
+106  # Start Script for the CATALINA Server
+107  # -----------------------------------------------------------------------------
+108  # Better OS/400 detection: see Bugzilla 31132
+109  os400=false
+110  case "`uname`" in OS400*) os400=true;; esac
+111  # resolve links - $0 may be a softlink
+112  PRG="$0"
+113  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+114  PRGDIR=`dirname "$PRG"`
+115  EXECUTABLE=catalina.sh
+116  # Check that target executable exists
+117  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+118  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+119  SET JAVA_HOME=D:\Java\jdk1.8.0_92
+120  SET TOMCAT_HOME=D:\Tomcat\apache-tomcat-8.0.53
+121  #!/bin/sh
+122  # Licensed to the Apache Software Foundation (ASF) under one or more
+123  # contributor license agreements.  See the NOTICE file distributed with
+124  # this work for additional information regarding copyright ownership.
+125  # The ASF licenses this file to You under the Apache License, Version 2.0
+126  # (the "License"); you may not use this file except in compliance with
+127  # the License.  You may obtain a copy of the License at
+128  #
+129  #     http://www.apache.org/licenses/LICENSE-2.0
+130  #
+131  # Unless required by applicable law or agreed to in writing, software
+132  # distributed under the License is distributed on an "AS IS" BASIS,
+133  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+134  # See the License for the specific language governing permissions and
+135  # limitations under the License.
+136  # -----------------------------------------------------------------------------
+137  # Start Script for the CATALINA Server
+138  # -----------------------------------------------------------------------------
+139  # Better OS/400 detection: see Bugzilla 31132
+140  os400=false
+141  case "`uname`" in OS400*) os400=true;; esac
+142  # resolve links - $0 may be a softlink
+143  PRG="$0"
+144  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+145  PRGDIR=`dirname "$PRG"`
+146  EXECUTABLE=catalina.sh
+147  # Check that target executable exists
+148  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+149  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+150  SET JAVA_HOME=D:\Java\jdk1.8.0_92
+151  SET TOMCAT_HOME=D:\Tomcat\apache-tomcat-8.0.53
+152  #!/bin/sh
+153  # Licensed to the Apache Software Foundation (ASF) under one or more
+154  # contributor license agreements.  See the NOTICE file distributed with
+155  # this work for additional information regarding copyright ownership.
+156  # The ASF licenses this file to You under the Apache License, Version 2.0
+157  # (the "License"); you may not use this file except in compliance with
+158  # the License.  You may obtain a copy of the License at
+159  #
+160  #     http://www.apache.org/licenses/LICENSE-2.0
+161  #
+162  # Unless required by applicable law or agreed to in writing, software
+163  # distributed under the License is distributed on an "AS IS" BASIS,
+164  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+165  # See the License for the specific language governing permissions and
+166  # limitations under the License.
+167  # -----------------------------------------------------------------------------
+168  # Start Script for the CATALINA Server
+169  # -----------------------------------------------------------------------------
+170  # Better OS/400 detection: see Bugzilla 31132
+171  os400=false
+172  case "`uname`" in OS400*) os400=true;; esac
+173  # resolve links - $0 may be a softlink
+174  PRG="$0"
+175  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+176  PRGDIR=`dirname "$PRG"`
+177  EXECUTABLE=catalina.sh
+178  # Check that target executable exists
+179  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+180  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+181  SET JAVA_HOME=D:\Java\jdk1.8.0_92
+182  SET TOMCAT_HOME=D:\Tomcat\apache-tomcat-8.0.53
+183  #!/bin/sh
+184  # Licensed to the Apache Software Foundation (ASF) under one or more
+185  # contributor license agreements.  See the NOTICE file distributed with
+186  # this work for additional information regarding copyright ownership.
+187  # The ASF licenses this file to You under the Apache License, Version 2.0
+188  # (the "License"); you may not use this file except in compliance with
+189  # the License.  You may obtain a copy of the License at
+190  #
+191  #     http://www.apache.org/licenses/LICENSE-2.0
+192  #
+193  # Unless required by applicable law or agreed to in writing, software
+194  # distributed under the License is distributed on an "AS IS" BASIS,
+195  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+196  # See the License for the specific language governing permissions and
+197  # limitations under the License.
+198  # -----------------------------------------------------------------------------
+199  # Start Script for the CATALINA Server
+200  # -----------------------------------------------------------------------------
+201  # Better OS/400 detection: see Bugzilla 31132
+202  os400=false
+203  case "`uname`" in OS400*) os400=true;; esac
+204  # resolve links - $0 may be a softlink
+205  PRG="$0"
+206  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+207  PRGDIR=`dirname "$PRG"`
+208  EXECUTABLE=catalina.sh
+209  # Check that target executable exists
+210  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+211  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+212  SET JAVA_HOME=D:\Java\jdk1.8.0_92
+213  SET TOMCAT_HOME=D:\Tomcat\apache-tomcat-8.0.53
+214  #!/bin/sh
+215  # Licensed to the Apache Software Foundation (ASF) under one or more
+216  # contributor license agreements.  See the NOTICE file distributed with
+217  # this work for additional information regarding copyright ownership.
+218  # The ASF licenses this file to You under the Apache License, Version 2.0
+219  # (the "License"); you may not use this file except in compliance with
+220  # the License.  You may obtain a copy of the License at
+221  #
+222  #     http://www.apache.org/licenses/LICENSE-2.0
+223  #
+224  # Unless required by applicable law or agreed to in writing, software
+225  # distributed under the License is distributed on an "AS IS" BASIS,
+226  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+227  # See the License for the specific language governing permissions and
+228  # limitations under the License.
+229  # -----------------------------------------------------------------------------
+230  # Start Script for the CATALINA Server
+231  # -----------------------------------------------------------------------------
+232  # Better OS/400 detection: see Bugzilla 31132
+233  os400=false
+234  case "`uname`" in OS400*) os400=true;; esac
+235  # resolve links - $0 may be a softlink
+236  PRG="$0"
+237  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+238  PRGDIR=`dirname "$PRG"`
+239  EXECUTABLE=catalina.sh
+240  # Check that target executable exists
+241  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+242  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+243  SET JAVA_HOME=D:\Java\jdk1.8.0_92
+244  SET TOMCAT_HOME=D:\Tomcat\apache-tomcat-8.0.53
+245  #!/bin/sh
+246  # Licensed to the Apache Software Foundation (ASF) under one or more
+247  # contributor license agreements.  See the NOTICE file distributed with
+248  # this work for additional information regarding copyright ownership.
+249  # The ASF licenses this file to You under the Apache License, Version 2.0
+250  # (the "License"); you may not use this file except in compliance with
+251  # the License.  You may obtain a copy of the License at
+252  #
+253  #     http://www.apache.org/licenses/LICENSE-2.0
+254  #
+255  # Unless required by applicable law or agreed to in writing, software
+256  # distributed under the License is distributed on an "AS IS" BASIS,
+257  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+258  # See the License for the specific language governing permissions and
+259  # limitations under the License.
+260  # -----------------------------------------------------------------------------
+261  # Start Script for the CATALINA Server
+262  # -----------------------------------------------------------------------------
+263  # Better OS/400 detection: see Bugzilla 31132
+264  os400=false
+265  case "`uname`" in OS400*) os400=true;; esac
+266  # resolve links - $0 may be a softlink
+267  PRG="$0"
+268  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+269  PRGDIR=`dirname "$PRG"`
+270  EXECUTABLE=catalina.sh
+271  # Check that target executable exists
+272  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+273  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+274  SET JAVA_HOME=D:\Java\jdk1.8.0_92
+275  SET TOMCAT_HOME=D:\Tomcat\apache-tomcat-8.0.53
+276  #!/bin/sh
+277  # Licensed to the Apache Software Foundation (ASF) under one or more
+278  # contributor license agreements.  See the NOTICE file distributed with
+279  # this work for additional information regarding copyright ownership.
+280  # The ASF licenses this file to You under the Apache License, Version 2.0
+281  # (the "License"); you may not use this file except in compliance with
+282  # the License.  You may obtain a copy of the License at
+283  #
+284  #     http://www.apache.org/licenses/LICENSE-2.0
+285  #
+286  # Unless required by applicable law or agreed to in writing, software
+287  # distributed under the License is distributed on an "AS IS" BASIS,
+288  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+289  # See the License for the specific language governing permissions and
+290  # limitations under the License.
+291  # -----------------------------------------------------------------------------
+292  # Start Script for the CATALINA Server
+293  # -----------------------------------------------------------------------------
+294  # Better OS/400 detection: see Bugzilla 31132
+295  os400=false
+296  case "`uname`" in OS400*) os400=true;; esac
+297  # resolve links - $0 may be a softlink
+298  PRG="$0"
+299  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+300  PRGDIR=`dirname "$PRG"`
+301  EXECUTABLE=catalina.sh
+302  # Check that target executable exists
+303  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+304  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+305  SET JAVA_HOME=D:\Java\jdk1.8.0_92
+306  SET TOMCAT_HOME=D:\Tomcat\apache-tomcat-8.0.53
+307  #!/bin/sh
+308  # Licensed to the Apache Software Foundation (ASF) under one or more
+309  # contributor license agreements.  See the NOTICE file distributed with
+310  # this work for additional information regarding copyright ownership.
+311  # The ASF licenses this file to You under the Apache License, Version 2.0
+312  # (the "License"); you may not use this file except in compliance with
+313  # the License.  You may obtain a copy of the License at
+314  #
+315  #     http://www.apache.org/licenses/LICENSE-2.0
+316  #
+317  # Unless required by applicable law or agreed to in writing, software
+318  # distributed under the License is distributed on an "AS IS" BASIS,
+319  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+320  # See the License for the specific language governing permissions and
+321  # limitations under the License.
+322  # -----------------------------------------------------------------------------
+323  # Start Script for the CATALINA Server
+324  # -----------------------------------------------------------------------------
+325  # Better OS/400 detection: see Bugzilla 31132
+326  os400=false
+327  case "`uname`" in OS400*) os400=true;; esac
+328  # resolve links - $0 may be a softlink
+329  PRG="$0"
+330  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+331  PRGDIR=`dirname "$PRG"`
+332  EXECUTABLE=catalina.sh
+333  # Check that target executable exists
+334  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+335  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+336  SET JAVA_HOME=D:\Java\jdk1.8.0_92
+337  SET TOMCAT_HOME=D:\Tomcat\apache-tomcat-8.0.53
+338  #!/bin/sh
+339  # Licensed to the Apache Software Foundation (ASF) under one or more
+340  # contributor license agreements.  See the NOTICE file distributed with
+341  # this work for additional information regarding copyright ownership.
+342  # The ASF licenses this file to You under the Apache License, Version 2.0
+343  # (the "License"); you may not use this file except in compliance with
+344  # the License.  You may obtain a copy of the License at
+345  #
+346  #     http://www.apache.org/licenses/LICENSE-2.0
+347  #
+348  # Unless required by applicable law or agreed to in writing, software
+349  # distributed under the License is distributed on an "AS IS" BASIS,
+350  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+351  # See the License for the specific language governing permissions and
+352  # limitations under the License.
+353  # -----------------------------------------------------------------------------
+354  # Start Script for the CATALINA Server
+355  # -----------------------------------------------------------------------------
+356  # Better OS/400 detection: see Bugzilla 31132
+357  os400=false
+358  case "`uname`" in OS400*) os400=true;; esac
+359  # resolve links - $0 may be a softlink
+360  PRG="$0"
+361  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+362  PRGDIR=`dirname "$PRG"`
+363  EXECUTABLE=catalina.sh
+364  # Check that target executable exists
+365  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+366  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+367  SET JAVA_HOME=D:\Java\jdk1.8.0_92
+368  SET TOMCAT_HOME=D:\Tomcat\apache-tomcat-8.0.53
+369  #!/bin/sh
+370  # Licensed to the Apache Software Foundation (ASF) under one or more
+371  # contributor license agreements.  See the NOTICE file distributed with
+372  # this work for additional information regarding copyright ownership.
+373  # The ASF licenses this file to You under the Apache License, Version 2.0
+374  # (the "License"); you may not use this file except in compliance with
+375  # the License.  You may obtain a copy of the License at
+376  #
+377  #     http://www.apache.org/licenses/LICENSE-2.0
+378  #
+379  # Unless required by applicable law or agreed to in writing, software
+380  # distributed under the License is distributed on an "AS IS" BASIS,
+381  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+382  # See the License for the specific language governing permissions and
+383  # limitations under the License.
+384  # -----------------------------------------------------------------------------
+385  # Start Script for the CATALINA Server
+386  # -----------------------------------------------------------------------------
+387  # Better OS/400 detection: see Bugzilla 31132
+388  os400=false
+389  case "`uname`" in OS400*) os400=true;; esac
+390  # resolve links - $0 may be a softlink
+391  PRG="$0"
+392  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+393  PRGDIR=`dirname "$PRG"`
+394  EXECUTABLE=catalina.sh
+395  # Check that target executable exists
+396  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+397  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+398  SET JAVA_HOME=D:\Java\jdk1.8.0_92
+399  SET TOMCAT_HOME=D:\Tomcat\apache-tomcat-8.0.53
+400  #!/bin/sh
+401  # Licensed to the Apache Software Foundation (ASF) under one or more
+402  # contributor license agreements.  See the NOTICE file distributed with
+403  # this work for additional information regarding copyright ownership.
+404  # The ASF licenses this file to You under the Apache License, Version 2.0
+405  # (the "License"); you may not use this file except in compliance with
+406  # the License.  You may obtain a copy of the License at
+407  #
+408  #     http://www.apache.org/licenses/LICENSE-2.0
+409  #
+410  # Unless required by applicable law or agreed to in writing, software
+411  # distributed under the License is distributed on an "AS IS" BASIS,
+412  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+413  # See the License for the specific language governing permissions and
+414  # limitations under the License.
+415  # -----------------------------------------------------------------------------
+416  # Start Script for the CATALINA Server
+417  # -----------------------------------------------------------------------------
+418  # Better OS/400 detection: see Bugzilla 31132
+419  os400=false
+420  case "`uname`" in OS400*) os400=true;; esac
+421  # resolve links - $0 may be a softlink
+422  PRG="$0"
+423  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+424  PRGDIR=`dirname "$PRG"`
+425  EXECUTABLE=catalina.sh
+426  # Check that target executable exists
+427  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+428  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+429  #!/bin/sh
+430  # Licensed to the Apache Software Foundation (ASF) under one or more
+431  # contributor license agreements.  See the NOTICE file distributed with
+432  # this work for additional information regarding copyright ownership.
+433  # The ASF licenses this file to You under the Apache License, Version 2.0
+434  # (the "License"); you may not use this file except in compliance with
+435  # the License.  You may obtain a copy of the License at
+436  #
+437  #     http://www.apache.org/licenses/LICENSE-2.0
+438  #
+439  # Unless required by applicable law or agreed to in writing, software
+440  # distributed under the License is distributed on an "AS IS" BASIS,
+441  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+442  # See the License for the specific language governing permissions and
+443  # limitations under the License.
+444  # -----------------------------------------------------------------------------
+445  # Start Script for the CATALINA Server
+446  # -----------------------------------------------------------------------------
+447  # Better OS/400 detection: see Bugzilla 31132
+448  os400=false
+449  case "`uname`" in OS400*) os400=true;; esac
+450  # resolve links - $0 may be a softlink
+451  PRG="$0"
+452  while [ -h "$PRG" ] ; do   ls=`ls -ld "$PRG"`;   link=`expr "$ls" : '.*-> \(.*\)$'`;   if expr "$link" : '/.*' > /dev/null; then     PRG="$link";   else     PRG=`dirname "$PRG"`/"$link";   fi; done
+453  PRGDIR=`dirname "$PRG"`
+454  EXECUTABLE=catalina.sh
+455  # Check that target executable exists
+456  if $os400; then   eval; else   if [ ! -x "$PRGDIR"/"$EXECUTABLE" ]; then     echo "Cannot find $PRGDIR/$EXECUTABLE";     echo "The file is absent or does not have execute permission";     echo "This file is needed to run this program";     exit 1;   fi; fi
+457  exec "$PRGDIR"/"$EXECUTABLE" start "$@"
+458  、
+459  /
+460  \
+461  cd d\
+462  cd \d
+463  cd /d
+464  cd  hqs
+465  tar-xf videoClips
+466  ls
+467  tar - xf videoClips
+468  tar - xf videoClips
+469  tar -xf videoClips
+470  ls
+471  rm videoClips
+472  LS
+473  ls videoMP4/
+474  cd pic
+475  history >>20230906-20213617.txt
+476  cd..
+477  cd ..
+478  touch gw.html
+479  ls
+480  vim gw.html
+481  vim gw.html
+482  LS
+483  vi gw.html
+484  ls
+485  vim gw.html
+486  vim gw.html
+487  vim gw.html
+488  cd /
+489  cd /d/hqs
+490  ls
+491  cd ..
+492  cd..
+493  cd ..
+494  curl https//lijianhong19720904.github.io/WebAdv/kc00/cet6.txt
+495  curl https//lijianhong19720904.github.io/WebAdv/kc00/cet6.txt>cet6.txt
+496  ls
+497  pwd
+498  mv /c/users/Lenovo/cet6.txt  /d/hqs/txt
+499  ls
+500  ls /d/hqs/txt/
+501  history
+502  history >>/d/hqs/his2
+</body>
+</html>
